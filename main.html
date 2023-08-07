@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="control.js">
+    <link rel="stylesheet" href="font/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div class="cursor-container">
+        <div class="cursor"></div>
+    </div>
+    <div id="header">
+        <div class="header">
+            <img src="https://www.sabeco.com.vn/Data/Sites/1/media/logo/logo-foo.png" alt="">
+            <div class="in4text">
+                <div class="ti-home"></div>
+                <li class="header_text">GIỚI THIỆU</li>
+                <div>
+                    <li class="header_text show">SẢN PHẨM</li>
+                    <div class="thanmenu">
+                        <div class="sanpham">
+                            <div class="menu" id="menu">
+                                <div class="left-menu">
+                                    <!-- Nội dung phần trái của menu -->
+                                    <div class="ndl">
+                                        <img src="1.jpg" style="height: 500px; position: absolute; top: 5px;" alt="">
+
+                                    </div>
+                                </div>
+                                <div class="divider"></div> <!-- Đường kẻ ở giữa -->
+                                <div class="right-menu">
+                                    <img src="2.jpg" style="height: 200px; position: absolute; top: 25px" alt="">
+                                    <img src="3.jpg" style="height: 75px; position: absolute; top: 250px" alt="">
+                                    <div class="dichvu">
+                                        <div class="hover">
+                                            <a href="index.html" style="text-decoration: none; color: inherit;">
+                                                <img src="https://static.vecteezy.com/system/resources/previews/005/439/408/original/design-red-gift-box-icon-with-yellow-ribbon-free-vector.jpg"
+                                                    style="height: 60px; position: absolute; padding-left: 10px; top: 340px"
+                                                    alt="">
+                                                <div class="dv">Dịch vụ thiết kế hộp quà</div>
+                                                <div class="xemthem">Xem thêm &gt;</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li class="header_text">CỔ ĐÔNG</li>
+                <li class="header_text">TRUYỀN THÔNG</li>
+                <li class="header_text">PHÂN PHỐI</li>
+                <li class="header_text">LIÊN HỆ</li>
+                <div class="ti-search"></div>
+                <div class="header_text">EN</div>
+            </div>
+        </div>
+    </div>
+    <div class="img-main">
+        <img src="4.jpg" style="" alt="">
+    </div>
+    <div class="footer">
+        <div class="footer_main">
+            <div class="column">Bùi Ngọc Phương An</div>
+            <div class="column">Vũ Thị Tuyết Mai</div>
+            <div class="column">Đoàn Thị Hoài Thương</div>
+            <div class="column">Huỳnh Thái Bảo</div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const headerText = document.querySelector(".header_text.show");
+            const menu = document.querySelector(".menu");
+
+            headerText.addEventListener("mouseover", function () {
+                menu.classList.add("show");
+            });
+
+            menu.addEventListener("mouseleave", function () {
+                menu.classList.remove("show");
+            });
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const cursor = document.querySelector(".cursor");
+            const body = document.querySelector("body");
+
+            document.addEventListener("mousemove", (e) => {
+                cursor.style.display = "block";
+                cursor.style.left = e.clientX - cursor.offsetWidth / 2 + "px";
+                cursor.style.top = e.clientY - cursor.offsetHeight / 2 + "px";
+            });
+
+            document.addEventListener("mouseenter", () => {
+                cursor.style.display = "block";
+            });
+
+            document.addEventListener("mouseleave", () => {
+                cursor.style.display = "none";
+            });
+
+            body.addEventListener("mouseover", (e) => {
+                if (e.target.classList.contains("pointer")) {
+                    cursor.style.display = "block";
+                } else {
+                    cursor.style.display = "none";
+                }
+            });
+        });
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,453 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    border-top: 30px solid #b30d14;
+    box-shadow: 1px 1px 1px 1px hsl(0, 0%, 77%);
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header {
+    height: 65px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin-left: 200px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.in4text {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 13px;
+}
+
+.header_text {
+    padding: 24px 15px;
+    display: block;
+    font-weight: normal; /* Đặt độ đậm bình thường cho font chữ */
+    white-space: nowrap; /* Ngăn chặn ngắt dòng */
+}
+
+.header_text:hover {
+    text-decoration: underline;
+    /* Thêm gạch chân khi hover */
+    color: rgb(255, 93, 48);
+    /* Thay đổi màu chữ thành màu cam khi hover */
+    background-color: #e6e6e6;
+    /* Thêm màu nền khi hover */
+    display: block;
+}
+
+.ti-home,
+.ti-search {
+    font-size: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 24px 15px;
+    font-weight: 3000;
+}
+
+.ti-home:hover,
+.ti-search:hover {
+    text-decoration: underline;
+    /* Thêm gạch chân khi hover */
+    color: rgb(255, 93, 48);
+    /* Thay đổi màu chữ thành màu cam khi hover */
+    background-color: #e6e6e6;
+    /* Thêm màu nền khi hover */
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(254, 254, 254);
+    padding-top: 80px;
+    position: relative;
+    top: 100px;
+}
+
+.infor {
+    margin: 30px;
+    width: 40%;
+
+}
+
+.color-picker {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.7;
+    box-shadow: 3px 3px #cecece;
+}
+
+/* CSS khi hover lên nút */
+.color-option:hover {
+    opacity: 1;
+}
+
+/* CSS khi được chọn (active) */
+.color-option:active {
+    border-color: #e0e0e0;
+}
+
+
+/* Định dạng màu nền cho từng class tương ứng */
+.color-option:nth-child(1) {
+    background-color: red;
+}
+
+.color-option:nth-child(2) {
+    background-color: green;
+}
+
+.color-option:nth-child(3) {
+    background-color: blue;
+}
+
+.color-option:nth-child(4) {
+    background-color: yellow;
+}
+
+.color-option:nth-child(5) {
+    background-color: orange;
+}
+
+.color-option:nth-child(6) {
+    background-color: purple;
+}
+
+.color-option:nth-child(7) {
+    background-color: pink;
+}
+
+.color-option.selected {
+    border-color: #a8a8a8;
+    box-shadow: 0 0 0 4px rgb(188, 188, 188);
+    /* Vòng tròn màu đen bao quanh màu được chọn */
+    opacity: 1;
+    /* Hủy hiệu ứng mờ cho màu đã được chọn */
+}
+
+
+
+
+
+
+.beer-types {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beer-type {
+    flex-basis: 25%;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.beer-img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.beer-img-container {
+    position: relative;
+}
+
+.beer-img.selected {
+    outline: 3px solid #a4a4a4;
+
+}
+
+.beer1 {
+    line-height: 50px;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    font-weight: 300;
+}
+
+.beer2 {
+    line-height: 50px;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    font-weight: 300;
+    margin-top: 4px;
+}
+
+.color-box {
+    width: 200px;
+    height: 150px;
+    border: 0.2px solid #c2c2c2;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.greeting-input,
+.sender-input,
+.receiver-input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 80px;
+    font-size: 20px;
+}
+
+.small-input {
+    width: 100%;
+    height: 30px;
+}
+
+
+
+.slideshow-container {
+    top: 100px;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    margin-top: 140px
+}
+
+.money {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cost {
+    float: right;
+    text-align: end;
+    margin-right: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6200;
+    /* Màu nền của nút */
+    color: #fff;
+    /* Màu chữ trên nút */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.button:hover {
+    opacity: 0.5;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.input {
+    margin: 30px;
+}
+
+.img-main {
+    width: 1520px;
+    z-index: 99;
+    position: absolute;
+    display: block;
+}
+
+/* CSS cho class menu */
+.menu {
+    height: 600px;
+    width: 1530px;
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 66px;
+    left: -208px;
+    display: none;
+}
+
+.menu.show {
+    display: flex;
+    /* Hiển thị menu khi có lớp "show" */
+}
+
+
+/* CSS cho class "menu" */
+/* CSS cho class "divider" (đường kẻ) */
+.left-menu,
+.right-menu {
+    flex: 1;
+    /* Chia đều không gian cho hai phần */
+    padding: 10px;
+    /* Thêm khoảng cách để tránh nội dung quá sát nhau */
+}
+
+.divider {
+    width: 0.5px;
+    height: 450px;
+    /* Chiều cao của đường kẻ dọc */
+    background-color: #d2d2d2;
+    /* Màu sắc của đường kẻ dọc */
+}
+
+.ndl {
+    position: absolute;
+    left: 300px;
+    top: 30px;
+}
+
+
+.dv {
+    font-size: 15px;
+    color: red;
+    position: absolute;
+    padding-left: 80px;
+    font-weight: 700;
+    top: 340px;
+}
+
+.xemthem {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 40px;
+    padding-left: 80px;
+    font-weight: 300;
+    top: 360px
+}
+
+.hover:hover {
+    background-color: #b30d14;
+
+    .dv {
+        color: #fff;
+    }
+
+    .xemthem {
+        color: #fff;
+    }
+}
+
+
+
+
+.footer {
+    position: absolute;
+    top:1000px;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    min-width: 100%;
+    width: auto;
+    background-color: #b30d14;
+    padding: 20px 0;
+}
+
+.footer_main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột bằng nhau */
+    gap: 20px; /* Khoảng cách giữa các cột */
+    margin: 30px 320px 30px 320px ;
+}
+
+.column {
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    margin: 0 10px 0 10px ;
+    font-weight: normal; /* Đặt độ đậm bình thường cho font chữ */
+    white-space: nowrap; /* Ngăn chặn ngắt dòng */
+}
+
+#footer {
+    position: absolute;
+    top:1500px;
+    left: 0;
+    min-width: 100%;
+    bottom: 0;
+    height: 50px;
+    width: auto;
+    background-color: #b30d14;
+    padding: 20px 0;
+}
+.img-main{
+    width: 1518px;
+    position: relative;
+    left: 0px;
+    top: 150px;
+    z-index: 998;
+}
+.img-main img {
+    width: 1521px;
+    max-width: 110%;
+    height: auto;
+    position: absolute;
+}
+
+@media screen and (max-width: 1521px) {
+    .img-main img {
+        width: 90%;
+        align-items: center;
+        display: flex;
+        left:  -16px;
+        justify-content: space-between;
+    }
+}
+
+.cursor-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+  }
+  .cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 0, 0.453);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    display: none;
+  }
+  .cursor-container.pointer .cursor {
+    display: block;
+  }

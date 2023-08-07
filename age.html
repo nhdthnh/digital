@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="age.css">
+</head>
+<body>
+    <div class="cursor-container">
+        <div class="cursor"></div>
+    </div>
+    <section style="background: url('https://www.sabeco.com.vn/Data/Sites/1/media/intro_bg/homebg.jpg') center center / cover no-repeat;" class="agegate-page clearfix">
+        <div class="container">
+        <div class="row flex flex-wrap">
+        <div class="col-xs-12 col-md-12 col-lg-8 offset-md-0 offset-lg-2">
+        <section class="agegatefrm text-xs-center clearfix">
+        <h1 class="logo"><img src="	https://www.sabeco.com.vn/Data/Sites/1/media/logo/logo_intro.png" alt="Bia Sai Gon"></h1>
+        <div class="btnwrap">
+        <button type="button" onclick="window.location.href='main.html'">Tôi đã đủ 18 tuổi</button>
+        <button type="button" class="open--popup">Tôi chưa đủ 18 tuổi</button>
+        </div>
+        <div class="intro-languages"><br>
+        </div>
+        <div class="agreetext">SABECO cam kết uống có trách nhiệm. Đó là lý do tại sao chúng tôi cần phải đảm bảo rằng bạn đang ở trên tuổi uống bia rượu hợp pháp và bạn được phép về mặt pháp lý để xem trang web này. Khi nhấn xác nhận "Tôi đã đủ 18 tuổi" đồng nghĩa với việc bạn xác nhận mình trong độ tuổi uống bia rượu hợp pháp. Nếu chưa đủ tuổi uống bia rượu hợp pháp, xin vui lòng ghé thăm trang của chúng tôi khi bạn đã đủ 18 tuổi.</div>
+        </section>
+        </div>
+        </div>
+        <div id="noticePopup" class="popup-dialog">
+        <div class="popup-global"><a href="#!" class="popup-close close"><span class="lnr lnr-cross"></span></a>
+        </div>
+        </div>
+        </section>
+        
+        <script>
+
+    
+            document.addEventListener("DOMContentLoaded", function () {
+                const cursor = document.querySelector(".cursor");
+                const body = document.querySelector("body");
+    
+                document.addEventListener("mousemove", (e) => {
+                    cursor.style.display = "block";
+                    cursor.style.left = e.clientX - cursor.offsetWidth / 2 + "px";
+                    cursor.style.top = e.clientY - cursor.offsetHeight / 2 + "px";
+                });
+    
+                document.addEventListener("mouseenter", () => {
+                    cursor.style.display = "block";
+                });
+    
+                document.addEventListener("mouseleave", () => {
+                    cursor.style.display = "none";
+                });
+    
+                body.addEventListener("mouseover", (e) => {
+                    if (e.target.classList.contains("pointer")) {
+                        cursor.style.display = "block";
+                    } else {
+                        cursor.style.display = "none";
+                    }
+                });
+            });
+    
+    
+    
+    
+    
+    
+    
+        </script>
+</body>
+</html>

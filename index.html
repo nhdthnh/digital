@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="control.js">
+    <link rel="stylesheet" href="font/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div class="cursor-container">
+        <div class="cursor"></div>
+    </div>
+    <div id="header">
+        <div class="header">
+            <a href="main.html">
+                <img src="https://www.sabeco.com.vn/Data/Sites/1/media/logo/logo-foo.png" alt=""
+                    style="margin-top: 12px;">
+            </a>
+            <div class="in4text">
+                <a href="main.html" style="text-decoration: none;">
+                    <div class="ti-home"></div>
+                </a>
+                <li class="header_text">GIỚI THIỆU</li>
+                <li class="header_text">SẢN PHẨM</li>
+                <li class="header_text">CỔ ĐÔNG</li>
+                <li class="header_text">TRUYỀN THÔNG</li>
+                <li class="header_text">PHÂN PHỐI</li>
+                <li class="header_text">LIÊN HỆ</li>
+                <div class="ti-search"></div>
+                <div class="header_text">EN</div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="infor">
+            <div class="text" style="margin-bottom: 15px; margin-left: 10px;">Chọn màu</div>
+            <div class="color-picker">
+                <div class="color-option" style="background-color: rgb(255, 255, 255)"></div>
+                <div class="color-option" style="background-color: green;"></div>
+                <div class="color-option" style="background-color: blue;"></div>
+                <div class="color-option" style="background-color: yellow;"></div>
+                <div class="color-option" style="background-color: orange;"></div>
+                <div class="color-option" style="background-color: purple;"></div>
+                <div class="color-option" style="background-color: pink;"></div>
+            </div>
+
+
+
+            <!-- Chọn loại bia và số lượng -->
+            <div class="text" style="margin-bottom: 15px; margin-left: 10px;">Chọn loại bia</div>
+            <div class="beer-types">
+
+                <div class="beer-type ">
+                    <div class="beer-img-container bia0">
+                        <img src="https://iwater.vn/Image/Picture/Bia/Sai%20Gon%20Lager%20330ml.png" alt="Lager"
+                            class="beer-img" />
+                    </div>
+                    <label class="beer1">SaiGon Lager</label>
+                </div>
+
+                <div class="beer-type ">
+                    <div class="beer-img-container bia1">
+                        <img src="https://iwater.vn/Image/Picture/Bia/Sai%20Gon%20Special%20330ml.png" alt="Special"
+                            class="beer-img" />
+                    </div>
+                    <label class="beer1">SaiGon Special</label>
+                </div>
+
+                <div class="beer-type ">
+                    <div class="beer-img-container bia2">
+                        <img src="https://iwater.vn/Image/Picture/Bia/Sai%20Gon%20Export%20330ml.png" alt="Bia 1"
+                            class="beer-img" />
+                    </div>
+                    <label class="beer1">SaiGon Export</label>
+                </div>
+
+                <div class="beer-type ">
+                    <div class="beer-img-container bia3">
+                        <img src="324607814_854036152519783_8374978956457822118_n-removebg-preview.png" alt="Bia 1"
+                            class="beer-img" />
+                    </div>
+                    <label class="beer2">SaiGon Gold</label>
+                </div>
+
+                <div class="beer-type ">
+                    <div class="beer-img-container bia4">
+                        <img src="https://salt.tikicdn.com/ts/product/a4/48/8f/e462cc29ae82a6f0cf726b4c110788da.png"
+                            alt="Bia 1" class="beer-img" style="padding-bottom: 30px;" />
+                    </div>
+                    <label class="beer2">SaiGon Chill</label>
+                </div>
+
+                <div class="beer-type ">
+                    <div class="beer-img-container bia5">
+                        <img src="https://iwater.vn/Image/Picture/New/333%20330ml.png" alt="Bia 1" class="beer-img" />
+                    </div>
+                    <label class="beer1">333</label>
+                </div>
+
+                <div class="beer-type">
+                    <div class="beer-img-container bia6">
+                        <img src="https://www.monde-selection.com/wp-content/uploads/2022/06/1037245.png" alt="Bia 1"
+                            class="beer-img" />
+                    </div>
+                    <label class="beer1">Lạc Việt</label>
+                </div>
+
+                <!-- Thêm các loại bia khác tương tự -->
+            </div>
+            <div class="input">
+                <!-- Ô text ghi thông tin lời chúc -->
+
+                <!-- Ô text ghi thông tin người gửi -->
+                <div class="text">Nhập lời chúc của bạn</div>
+                <input type="text" class="sender-input" placeholder="Nhập lời chúc của bạn" />
+
+                <!-- Ô text ghi thông tin người nhận -->
+                <div class="text">Thông tin liên lạc</div>
+                <div class="thongtinlienlac">Email</div>
+                <input type="text" class="small-input" placeholder="Email" />
+                <div class="thongtinlienlac">Họ và tên</div>
+                <input type="text" class="small-input" placeholder="Họ và tên" />
+                <div class="thongtinlienlac">Số điện thoại</div>
+                <input type="text" class="small-input" placeholder="Số điện thoại" />
+                <div class="thongtinlienlac">Địa chỉ</div>
+                <input type="text" class="small-input" placeholder="Địa chỉ" />
+            </div>
+
+
+            <div class="money">
+                <div class="cost_infor">
+                    <div class="text" style="margin-left: 30px;">Thành tiền:</div>
+                    <div class="text" style="margin-left: 30px;">Thiết kế bao bì:</div>
+                    <div class="text" style="margin-left: 30px; color: red; font-size: 25px;">Tổng:</div>
+                </div>
+                <div class="cost">
+                    <div class="costbeer text" style="font-weight: 300;">0 VND</div>
+                    <div class="costgift text" style="font-weight: 300;">50.000 VND</div>
+                    <div class="sum text" style="font-size: 25px;">0 VND</div>
+                </div>
+            </div>
+            <div class="button">
+                Hoàn tất
+            </div>
+        </div>
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="https://vn-live-01.slatic.net/p/1a2b7677587c8dfb8214e5d10b8a4a51.jpg" alt="Hình mẫu 1" />
+            </div>
+            <div class="slide">
+                <img src="https://vnn-imgs-f.vgcloud.vn/2022/01/18/11/bia-333-goi-ghem-nhung-an-tinh-trong-mon-qua-tet-1.jpg"
+                    alt="Hình mẫu 2" />
+            </div>
+            <div class="slide">
+                <img src="https://lh3.googleusercontent.com/Iv_Vn8JfH0CR-Mp-dU1ARGu-oZT0JzKhF2Potvc8cimK8IlmR9gEOQF7Z9yeJOc0QAoAQUq2fB1dJ2PuA_xdipEyq-NdiQEn=w500-rw"
+                    alt="Hình mẫu 3" />
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer_main">
+            <div class="column">Bùi Ngọc Phương An</div>
+            <div class="column">Vũ Thị Tuyết Mai</div>
+            <div class="column">Đoàn Thị Hoài Thương</div>
+            <div class="column">Huỳnh Thái Bảo</div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const colorOptions = document.querySelectorAll(".color-option");
+
+            colorOptions.forEach(function (option) {
+                option.addEventListener("click", function () {
+                    colorOptions.forEach(function (option) {
+                        option.classList.remove("selected");
+                    });
+                    this.classList.add("selected");
+                });
+            });
+        });
+
+
+        //------------------------------------//
+        document.addEventListener("DOMContentLoaded", function () {
+            const slides = document.querySelectorAll(".slide");
+            let currentSlide = slides.length - 1; // Đặt slide hiện tại là slide cuối cùng
+
+            function showSlide(n) {
+                slides.forEach((slide) => (slide.style.display = "none"));
+                slides[n].style.display = "block";
+            }
+
+            function nextSlide() {
+                currentSlide--;
+                if (currentSlide < 0) {
+                    currentSlide = slides.length - 1;
+                }
+                showSlide(currentSlide);
+            }
+
+            // Hiển thị hình ảnh đầu tiên
+            nextSlide();
+
+            setInterval(nextSlide, 3000); // Lướt ảnh mỗi 3 giây
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const beerImages = document.querySelectorAll(".beer-img");
+            const costBeer = document.querySelector(".costbeer");
+            const costGift = document.querySelector(".costgift");
+            const sum = document.querySelector(".sum");
+
+            // Đối tượng lưu giá tiền của từng loại bia
+            const beerPrices = {
+                bia0: 340000,
+                bia1: 270000,
+                bia2: 270000,
+                bia3: 380000,
+                bia4: 290000,
+                bia5: 265000,
+                bia6: 340000,
+                // Thêm các loại bia khác và giá tiền tương ứng
+            };
+
+            // Xóa class "selected" khỏi tất cả các hình ảnh
+            function clearSelected() {
+                beerImages.forEach((beerImg) => {
+                    beerImg.classList.remove("selected");
+                });
+            }
+
+            // Thêm class "selected" cho hình ảnh được chọn và cập nhật giá tiền
+            function selectBeer(event) {
+                clearSelected();
+                const selectedBeerImg = event.target;
+                selectedBeerImg.classList.add("selected");
+
+                // Lấy class của hình ảnh được chọn để tìm giá tiền tương ứng
+                const selectedBeerType = selectedBeerImg.parentElement.classList[1];
+                const price = beerPrices[selectedBeerType] || 0;
+                costBeer.textContent = price.toLocaleString() + " VND";
+
+                // Lấy giá tiền của thiết kế bao bì
+                const giftPrice = 50000;
+                costGift.textContent = giftPrice.toLocaleString() + " VND";
+
+                // Tính tổng giá tiền và in ra class "sum"
+                const total = price + giftPrice;
+                sum.textContent = total.toLocaleString() + " VND";
+            }
+
+            // Lắng nghe sự kiện click trên hình ảnh
+            beerImages.forEach((beerImg) => {
+                beerImg.addEventListener("click", selectBeer);
+            });
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const cursor = document.querySelector(".cursor");
+            const body = document.querySelector("body");
+
+            document.addEventListener("mousemove", (e) => {
+                cursor.style.display = "block";
+                cursor.style.left = e.clientX - cursor.offsetWidth / 2 + "px";
+                cursor.style.top = e.clientY - cursor.offsetHeight / 2 + "px";
+            });
+
+            document.addEventListener("mouseenter", () => {
+                cursor.style.display = "block";
+            });
+
+            document.addEventListener("mouseleave", () => {
+                cursor.style.display = "none";
+            });
+
+            body.addEventListener("mouseover", (e) => {
+                if (e.target.classList.contains("pointer")) {
+                    cursor.style.display = "block";
+                } else {
+                    cursor.style.display = "none";
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
